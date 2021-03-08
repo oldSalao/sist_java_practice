@@ -71,7 +71,6 @@ public class JavaMemo extends JFrame {
 		
 		jmHelp.add(jmiHelp);
 		
-		
 		jmb.add(jmFile);
 		jmb.add(jmFormat);
 		jmb.add(jmHelp);

@@ -11,9 +11,9 @@ import java.io.IOException;
  * @author user
  */
 public class UseFileWriter {
-	private BufferedWriter bw;
 	public UseFileWriter() throws IOException {
 		File file = new File("C:\\dev\\temp1\\test.txt");
+		BufferedWriter bw = null;
 		try {
 		bw = new BufferedWriter(new FileWriter(file));
 		bw.write("택시비2만원");
@@ -23,7 +23,6 @@ public class UseFileWriter {
 				bw.close();
 			}
 		}
-		
 	}
 
 	public static void main(String[] args) {

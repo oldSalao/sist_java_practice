@@ -22,9 +22,9 @@ public class UseFileReader {
 		try {
 			File file = new File("C:\\dev\\temp\\java_read.txt");
 			// FileReader를 사용하면 한글이 깨짐
-//			BufferedReader br = new BufferedReader(new FileReader(new File("C:\\dev\\temp\\java_read.txt")));
+//			br = new BufferedReader(new FileReader(new File("C:\\dev\\temp\\java_read.txt")));
 			// InputStreamReader과 FileInputStream을 사용해 Charset을 지정하면 한글이 깨지지 않는다.
-			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
+			br = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"));
 			while ((text = br.readLine()) != null) {
 				System.out.println(text);
 			}
